@@ -1,7 +1,7 @@
 # python-api-challenge
 ---
 ## Description
-The goal of this project is to showcase and make use of API and Geocoding skills. There are two parts, namely WeatherPy and VacationPy. In WeatherPy, geographic data is collected on a randomly generated list of cities for which weather conditions are then recorded for analysis to uncover any trends. In VacationPy, cities with desirable weather conditions are short listed, hotels within the city are searched for, then the cities are plotted on a map along with hotel names if available.
+The goal of this project is to showcase and make use of API and Geocoding skills. There are two parts, namely WeatherPy and VacationPy. In WeatherPy, geographic data is collected on a randomly generated list of cities for which weather conditions are then recorded for analysis to uncover any trends. In VacationPy, cities with desirable weather conditions are short-listed, hotels within the city are searched for, then the cities are plotted on a map along with hotel names if available.
 
 ### WeatherPy
 This part is mainly carried out within a jupyter notebook in the following steps:
@@ -18,7 +18,7 @@ This part is mainly carried out within a jupyter notebook in the following steps
 This part is also carried out within a jupyter notebook, in the following steps:
 - The data on cities and weather is read in from the previously generated CSV.
 - Using the hvPlot API a map is generated showing each city in the data as a point with the size corresponding to the humidity.
-- The data is shortlisted using the Pandas loc function to include only cities with ideal weather conditions, any rows with null values are also dropped.
+- The data is short-listed using the Pandas loc function to include only cities with ideal weather conditions, any rows with null values are also dropped.
 - An empty 'Hotel Name' column is created and the rows are looped through to find the first hotel within 10000 metres of each city via the Geoapify API.
 - The hotel names are appended to the empty column if found.
 - An hvPlot map is generated showing each of the ideal cities as a point with the name of the hotel showing up in the hover message.
